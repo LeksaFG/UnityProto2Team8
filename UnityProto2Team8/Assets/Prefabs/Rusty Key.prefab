@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1 &6312798231071403019
+--- !u!1 &3159998203272217361
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -8,12 +8,12 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 7043851177845284376}
-  - component: {fileID: 2061469869603316782}
-  - component: {fileID: 5739633799234033879}
-  - component: {fileID: 3022182844065938480}
-  - component: {fileID: 3022182844065938481}
-  - component: {fileID: 3022182844065938477}
+  - component: {fileID: 3159998203272217367}
+  - component: {fileID: 3159998203272217366}
+  - component: {fileID: 3159998203272217365}
+  - component: {fileID: 3159998203272217364}
+  - component: {fileID: 3159998203272217363}
+  - component: {fileID: 3159998203272217362}
   m_Layer: 8
   m_Name: Rusty Key
   m_TagString: Object
@@ -21,35 +21,35 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &7043851177845284376
+--- !u!4 &3159998203272217367
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6312798231071403019}
+  m_GameObject: {fileID: 3159998203272217361}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 8.5, y: 1.015, z: 0.5}
+  m_LocalPosition: {x: 8.596421, y: 1.019553, z: 1.9604759}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!33 &2061469869603316782
+--- !u!33 &3159998203272217366
 MeshFilter:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6312798231071403019}
+  m_GameObject: {fileID: 3159998203272217361}
   m_Mesh: {fileID: -1215533875317036940, guid: 0669f3d8f4b119f418a4bbe061cc198f, type: 3}
---- !u!23 &5739633799234033879
+--- !u!23 &3159998203272217365
 MeshRenderer:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6312798231071403019}
+  m_GameObject: {fileID: 3159998203272217361}
   m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
@@ -84,31 +84,31 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!65 &3022182844065938480
+--- !u!65 &3159998203272217364
 BoxCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6312798231071403019}
+  m_GameObject: {fileID: 3159998203272217361}
   m_Material: {fileID: 0}
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 0.24588585, y: 0.1583144, z: 0.29919076}
   m_Center: {x: -0.0036549568, y: 0.08669676, z: 0.0073393583}
---- !u!82 &3022182844065938481
+--- !u!82 &3159998203272217363
 AudioSource:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6312798231071403019}
+  m_GameObject: {fileID: 3159998203272217361}
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: e58761ccbcb8b754fa7cf559d514f028, type: 3}
-  m_PlayOnAwake: 0
+  m_PlayOnAwake: 1
   m_Volume: 1
   m_Pitch: 1
   Loop: 0
@@ -193,16 +193,16 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
---- !u!114 &3022182844065938477
+--- !u!114 &3159998203272217362
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6312798231071403019}
+  m_GameObject: {fileID: 3159998203272217361}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2ba497438108d5b4383e82d1e3373fa5, type: 3}
+  m_Script: {fileID: 11500000, guid: 92e14398fd041d64c909ba0e26f5e4b4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   displayText: '[E] Pick up Rusty Key'
