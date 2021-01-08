@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class LightFlicker : MonoBehaviour
 {
+   
    bool isFlickering = false;
    float timeDelay;
     public float FlickerRangeMin = 0.01f;
@@ -15,6 +16,8 @@ public class LightFlicker : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+
+
         if (isFlickering == false) {
             StartCoroutine(FlickeringLight());
         }
