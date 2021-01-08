@@ -1,28 +1,34 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
-//Detects when player presser interact button while looking at an IInteractive
-//and then calls that IInteractive's InteractWith method.
-public class InteractWithLookedAt : MonoBehaviour
+public class LookedAtInteractiveDisplayText : MonoBehaviour
 {
-private IInteractive lookedAtInteractive;
-
-    // Update is called once per frame
-    void Update()
+    private IInteractive lookedAtInteractive;
+    private Text displayText;
+    private void Awake()
     {
-        if(Input.GetButtonDown("Interact") && lookedAtInteractive != null)
-        {
-            Debug.Log("Player pressed Interact button.");
-            lookedAtInteractive.InteractWith();
-
-        }
+        displayText = GetComponent<Text>();
+        UpdateDisplayText();
     }
+
+    private void UpdateDisplayText()
+    {
+        if(lookedAtInteractive != null)
+            displayText.text = lookedAtInteractive.DisplayText;
+        else
+            displayText.text = string.Empty;
+    }
+
     //Event handler for DetectLookedAtInteractive.LookedAtInteractiveChanged
     private void OnLookedAtInteractiveChanged(IInteractive newLookedAtInteractive)
+    //Reference to the new interactive the player is looking at.
     {
         lookedAtInteractive = newLookedAtInteractive;
+        UpdateDisplayText();
     }
+    
     #region Event subsctiption / unsubscription
     private void OnEnable()
     {
