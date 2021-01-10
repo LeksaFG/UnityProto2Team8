@@ -6,9 +6,19 @@ public class InventoryObject : InteractiveObject
 {
     [Tooltip("The name of the object, as it will appear in the inventory menu UI.")]
     [SerializeField]
-    private string objectName = nameof(InventoryObject);
+    private string objectName = nameof(InventoryObject);    
+    
+    [Tooltip("Description text shown in the inventory menu when an item is selected.")]
+    [TextArea(3, 8)]
+    [SerializeField]
+    private string description;
+
+    [Tooltip("Icon of an item in the inventory menu.")]
+    [SerializeField]
+    private Sprite icon;
     
     public string ObjectName => objectName;
+
     private new Renderer renderer;
     private new Collider collider;
 
@@ -32,5 +42,6 @@ public class InventoryObject : InteractiveObject
         PlayerInventory.InventoryObjects.Add(this);
         renderer.enabled = false;
         collider.enabled = false;
+        Debug.Log($"Inventory menu game object name {InventoryMenu.Instance.name}");
     }
 }
